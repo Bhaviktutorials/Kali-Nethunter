@@ -128,18 +128,19 @@ function get_rootfs() {
         fi
     fi
     printf "${blue}[*] Downloading rootfs...${reset}\n\n"
-    get_url
-    axel ${EXTRA_ARGS} --alternate "$ROOTFS_URL"
+    #get_url
+    #axel ${EXTRA_ARGS} --alternate "$ROOTFS_URL"
+    
 }
 
 function get_sha() {
     if [ -z $KEEP_IMAGE ]; then
         printf "\n${blue}[*] Getting SHA ... ${reset}\n\n"
-        get_url
+        #get_url
         if [ -f ${SHA_NAME} ]; then
             rm -f ${SHA_NAME}
         fi
-        axel ${EXTRA_ARGS} --alternate "${SHA_URL}"
+        #axel ${EXTRA_ARGS} --alternate "${SHA_URL}"
     fi
 }
 
