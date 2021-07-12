@@ -96,13 +96,14 @@ function check_dependencies() {
     ##apt update -y &> /dev/null
     apt-get update -y &> /dev/null || apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" dist-upgrade -y &> /dev/null
 
-    for i in proot tar axel; do
+    for i in proot tar python; do
         if [ -e $PREFIX/bin/$i ]; then
             echo "  $i is OK"
         else
             printf "Installing ${i}...\n"
+	    pip install gdown
             apt install -y $i || {
-                printf "${red}ERROR: Failed to install packages.\n Exiting.\n${reset}"
+                printf "${red}ERROR: Failed to install packages.\n Exiting.\n${reset}"		
 	        exit
             }
         fi
@@ -128,14 +129,27 @@ function get_rootfs() {
         fi
     fi
     printf "${blue}[*] Downloading rootfs...${reset}\n\n"
+    if [ "${SYS_ARCH}" != "arm64" ];then
+		# ROOTFS ARMHF
+		gdown https://drive.google.com/uc?id=1cWCuxhTotNMMdLZpB5G7cednhRz2hWeY
+	else
+		# ROOTFS ARM64
+		gdown https://drive.google.com/uc?id=1DbP2LCZGWAH-A9IUHxXZqxoT9Sx8fGFb
+	fi
     #get_url
-    #axel ${EXTRA_ARGS} --alternate "$ROOTFS_URL"
-    
+    #axel ${EXTRA_ARGS} --alternate "$ROOTFS_URL"    
 }
 
 function get_sha() {
     if [ -z $KEEP_IMAGE ]; then
         printf "\n${blue}[*] Getting SHA ... ${reset}\n\n"
+	if [ "${SYS_ARCH}" != "arm64" ];then
+		# SHA 512 SUM ARMHF
+		gdown https://drive.google.com/uc?id=1AF-29oLlrdDNMFotmzk0oi5QWTHI8aFJ
+	else
+		# SHA 512 SUM ARM64
+		gdown https://drive.google.com/uc?id=1ORCr_kzE-d3vCj--FZVjK66I5Y7_EivH
+	fi
         #get_url
         if [ -f ${SHA_NAME} ]; then
             rm -f ${SHA_NAME}
