@@ -152,7 +152,8 @@ function get_sha() {
 	fi
         #get_url
         if [ -f ${SHA_NAME} ]; then
-            rm -f ${SHA_NAME}
+            #rm -f ${SHA_NAME}
+	    image=ok
         fi
         #axel ${EXTRA_ARGS} --alternate "${SHA_URL}"
     fi
