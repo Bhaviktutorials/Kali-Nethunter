@@ -100,8 +100,7 @@ function check_dependencies() {
         if [ -e $PREFIX/bin/$i ]; then
             echo "  $i is OK"
         else
-            printf "Installing ${i}...\n"
-	    pip install gdown
+            printf "Installing ${i}...\n"	    
             apt install -y $i || {
                 printf "${red}ERROR: Failed to install packages.\n Exiting.\n${reset}"		
 	        exit
@@ -109,6 +108,7 @@ function check_dependencies() {
         fi
     done
     apt upgrade -y
+    pip install gdown
 }
 
 
