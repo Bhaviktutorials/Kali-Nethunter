@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash -e
 
+## Re-developed by Ashish Singh 
+## This script will installed kali-nethuntern in termux without any error
+## If you like my work please subscribe us as youtube.
+
 VERSION=2020011601
 BASE_URL=https://images.kali.org/nethunter
 USERNAME=kali
@@ -359,7 +363,8 @@ function print_banner() {
     printf "${blue}##  88P   Y8b      d8''''''''8b   88        88  ##\n"
     printf "${blue}##  88     '88.   d8'        '8b  88        88  ##\n"
     printf "${blue}##  88       Y8b d8'          '8b 888888888 88  ##\n"
-    printf "${blue}##                                              ##\n"
+    printf "${blue}##                                              ##\n"  
+    printf "${yellow}##                  Re-developed by Ashish Singh ##\n"
     printf "${blue}####  ############# NetHunter ####################${reset}\n\n"
 }
 
