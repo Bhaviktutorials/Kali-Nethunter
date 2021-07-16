@@ -364,7 +364,7 @@ function print_banner() {
     printf "${blue}##  88     '88.   d8'        '8b  88        88  ##\n"
     printf "${blue}##  88       Y8b d8'          '8b 888888888 88  ##\n"
     printf "${blue}##                                              ##\n"  
-    printf "${yellow}##                  Re-developed by Ashish Singh ##\n"
+    printf "${yellow}##                 Re-developed by Ashish Singh ##\n"
     printf "${blue}####  ############# NetHunter ####################${reset}\n\n"
 }
 
