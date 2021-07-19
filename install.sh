@@ -2,7 +2,7 @@
 
 ## Re-developed by Ashish Singh 
 ## This script will installed kali-nethuntern in termux without any error
-## If you like my work please subscribe us as youtube.
+## If you like my work please subscribe us on youtube.
 
 VERSION=2020011601
 BASE_URL=https://images.kali.org/nethunter
