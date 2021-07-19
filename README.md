@@ -1,8 +1,8 @@
 ***
-<p align="center"><img title="Built With Love" src="https://forthebadge.com/images/badges/built-for-android.svg">
+<p align="center"> <img title="Built With Love" src="https://forthebadge.com/images/badges/built-for-android.svg">
 
-  <img src="https://i.ibb.co/Jcy3Rr3/kali-nethunter.png">
-<p align="center">
+<p align="center"> <img src="https://i.ibb.co/Jcy3Rr3/kali-nethunter.png">
+
 
 <p align="center"><a href="https://github.com/Bhaviktutorials"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%99%A5-red" ></a>
  <a href="https://paypal.me/bhavikoza"><img title="Donate" src="https://img.shields.io/badge/Donate-PayPal-blue" ></a>
