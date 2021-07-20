@@ -29,7 +29,7 @@
 ---
 ## <p align="center"> Workflow ⚙️
 <br>
-<p align="center"> <img src="https://s6.gifyu.com/images/video2f548e81b367098f.gif" width="1920" height="">
+<p align="center"> <img src="https://s6.gifyu.com/images/finalb9536b7d2f152b5e.gif" width="1920" height="">
 
 
 ***
